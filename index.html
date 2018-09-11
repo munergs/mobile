@@ -188,6 +188,10 @@
 
     <script src="./js/swiper.min.js"></script>
     <script>
+       var father=document.querySelector('.selectm');
+       father.addEventListener('tap',function (e) {
+            alert('123');
+        })
 
         $('.fix .fixbar>div').on('click',function(){
             $('.fix .fixbar>div').removeClass('active');
