@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.h_top{
+    padding-left:20px;
+    padding-top: 20px; 
+    margin-bottom: 25px;
+    
+}
+.h_top span{
+    margin-right: 10px;
+}
+.searchcontainer{
+    display: flex;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.searchcontainer input{
+    border-radius: 0px 15px 0px 15px;
+    padding-left: 15px;
+    height: 30px;
+    border:none;
+    width: 75%;
+    box-shadow:0px 0px 23px -4px #bbb;
+    margin-right: 10px;
+    outline: none;
+    transition: 0.6s;
+}
+.searchcontainer input:focus{
+    box-shadow:0px 0px 23px -1px #999;
+}
+.searchcontainer button{
+    background-color:#e3662f;
+    border:none;
+    padding: 8px 15px;
+    border-radius: 15px 0px 15px 0px;
+    outline: none;
+    transition: 0.4s;
+    width: 20%;
+}
+.searchcontainer button:focus{
+    box-shadow: 1px 1px 10px -1px #666;
+}
+.searchcontainer button span{
+    color: #fff;
+}
+/* swiper */
+.sp{
+    display: flex;
+    margin-bottom: 25px;
+}
+.sp .swiper-container{
+    width: 100%;
+}
+.sp .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.sp .swiper-slide img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.sp .swiper-slide img:hover{
+    transform: scale(1.05);
+}
+/* swiperend */
+
+/* select */
+.select{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.select p{
+    margin-bottom: 15px;
+}
+.selectm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.selectm span{
+    display: inline-block;
+    padding: 7px 15px;
+    box-shadow: 0px 0px 20px -2px #ccc;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition: 0.4s;   
+}
+.selectm span:hover{
+    background-color: #fcae8d4b;
+}
+/* selectend */
+/* tuijian */
+.tuijian{
+    padding-left: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.tuijian>p{
+    margin-bottom: 15px;
+}
+.touch{
+    padding-bottom: 20px;
+}
+.touch .swiper-slide img{
+    display: block;
+    width: 100%;
+    transition: 0.6s;
+    border-radius: 5px 5px 0 0;
+}
+
+.tjcontainer{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px -1px #ccc;
+}
+.tjmain{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tjmainright span{
+    font-size: 20px;
+    padding-top: 5px;
+    color: #e3662f;
+
+}
+.tjmainright span.fa-bookmark-o{
+    color: #666;
+}
+.tjmainleft .light{
+    color: #999;
+    font-size: 14px;
+}
+.tjmainfoot{
+    padding-left: 5px;
+}
+.tjmainfoot span{
+    color: #e3662f;
+}
+.tjmainfoot span.tjfl{
+    color: #DADADA;
+}
+
+.touch .swiper-container {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+}
+.touch .swiper-slide {
+      width: 40%;
+      
+}
+.touch .swiper-slide:nth-child(2n) {
+      width: 40%;
+}
+.touch .swiper-slide:nth-child(3n) {
+      width: 40%;
+}
+/* tuijian end*/
+
+/* media */
+.media{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    margin-bottom: 55px;
+}
+.medialeft{
+   width: 60%;
+   padding-right:2%;
+   font-size: 14px;
+}
+.medialeft .mp1{
+    margin-bottom: 15px;
+}
+.medialeft .mp2{
+    color: #666;
+    margin-bottom: 10px;
+}
+.medialeft .mp3{
+    color: #999;
+    margin-bottom: 10px;
+    text-align:justify;
+}
+
+.medialeft .mp4{
+    color: #dadada;
+    display:flex;
+    justify-content: space-between;
+} 
+.medialeft .mp4 div span{
+    margin-right: 5px;
+}
+.mediaright{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.mediaright img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+/* media end */
+/* foot */
+.fix{
+    position: fixed;
+    height: 50px;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    z-index: 9;
+}
+.fix .fixbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #999999;
+}
+.fix .fixbar>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fix .fixbar span{
+    font-size: 26px;
+}
+.fix .fixbar>div.active{
+    color: #e3662f;
+}
+.fix .fixbar>div p{
+    display: none;
+    font-size: 12px;
+}
+.fix .fixbar>div.active p{
+    display: inline;
+}
+/* foot end */
